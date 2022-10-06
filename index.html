@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Hotel Airport Prime </title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="keyword" content="" />
+    <meta name="description" content="" />
+
+   
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+
+	<!-- Favicons -->
+<link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="assets/styles/style.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/demo/style-demo.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/styles/vendors/font-awesome.css"/>
+	
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+    <!-- Header -->
+	<header class="header">
+	    <nav class="navbar navbar-white navbar-overlay">
+            <a class="logo-link" href="index.html">
+                <img class="logotype" src="images/logo-trans1.png" alt="Hotel Airport Prime">
+		    </a>
+		    <div class="navbar__menu">
+		        <button class="hamburger" type="button">
+				    <span></span>
+					<span></span>
+				</button>
+			    <ul class="nav">
+				    <li class="nav__item _is-current"><a class="nav__link" href="index.html"><span data-hover="Home">Home</span></a></li>
+<li class="nav__item"><a class="nav__link" href="about.html"><span data-hover="About Us">About Us</span></a></li>
+				    <li class="nav__item"><a class="nav__link" href="gallery.html"><span data-hover="Gallery">Gallery</span></a></li><li class="nav__item _is-current"><a class="nav__link" href="rooms.html"><span data-hover="Rooms">Rooms</span></a></li>
+				    
+				    <!--<li class="nav__item"><a class="nav__link" href="blog.html"><span data-hover="Blog">Blog</span></a></li>-->
+				    <li class="nav__item"><a class="nav__link" href="contact.html"><span data-hover="Contact Us">Contact Us</span></a></li>
+					<li class="nav__item"><a class="btn btn__medium" href=""><i class="btn-icon-left icon-bookmark"></i>Reservations</a></li>
+			    </ul>
+	        </div>
+		    <div class="navbar__btn">
+		        <a class="btn btn__medium" href="rooms.html"><i class="btn-icon-left icon-bookmark"></i>Reservations</a>
+		    </div>	
+	    </nav>
+	</header>
+	<!-- /Header -->
+    
+	<!-- Content -->
+	<main class="main">
+        <!-- Intro -->
+		<section class="intro">
+		    <div class="intro__bg-wrap">
+		        <div class="overlay intro__bg js-image js-parallax" data-image="images/3.jpeg"></div>
+			</div>
+	        <div class="container intro__container">
+		        <div class="row h-100 align-items-center">
+			        <div class="col-12 col-md-12 col-xl-8">
+				        <!-- <span class="title title--overhead text-white js-lines">WELCOME TO HOTEL AIRPORT PRIME</span> -->
+		                <h1 class="title title--display-1 js-lines">Feeling cool like your favorite place.</h1>
+					    <!-- <button class="intro__btn-play js-lines" id="play">Adventure<span class="btn-play btn-play__popup"></span></button> -->
+				    </div>
+                </div>				
+		    </div>
+		    <!-- Scroll To -->
+		    <a class="scroll-to" href="!#about">Scroll<span class="scroll-to__line"></span></a>
+	    </section>
+	    <!-- /Intro -->
+	
+		<!-- Booking -->
+		<div class="bottom-panel booking-panel">
+		    <form class="bottom-panel__wrap d-flex">
+			    <div class="row bottom-panel__form-wrap">
+			        <div class="form-group col-date-to col-12 col-sm-6 col-md-4 slash">
+				        <label class="labelFeature" for="check-in">Check in</label>
+                        <input type="text" class="inputFeature input-arrow readonly js-datepicker" id="check-in" name="check-in" placeholder="Select date" required="required" autocomplete="off">
+				    </div>
+				    <div class="form-group col-date-from col-12 col-sm-6 col-md-4 slash">
+				        <label class="labelFeature" for="check-out">Check out</label>
+                        <input type="text" class="inputFeature input-arrow readonly js-datepicker" id="check-out" name="check-out" placeholder="Select date" required="required" autocomplete="off">
+				    </div>
+				    <div class="form-group col-12 col-md-4 dropdown">
+					    <div class="closeDropdown" id="dropdownPersonsAction" data-toggle="dropdown" data-display="static">
+				            <label class="labelFeature" for="person-total">Person</label>
+                            <input type="text" class="inputFeature input-arrow readonly" id="person-total" name="person" placeholder="Select person" required="required" autocomplete="off">
+						</div>
+						
+						<!-- Dropdown person -->
+						<div class="dropdown-menu dropdown-menu-lg-left dropdown-menu-right" id="dropdownPersons" aria-labelledby="dropdownPersonsAction">
+						    <div class="row">
+						        <div class="form-group col-6 col__left">
+							        <label class="label" for="person-adult">Adults</label>
+						            <div class="js-quantity">
+									    <span class="qty-minus icon-minus"></span>
+									    <input type="number" class="inputText js-quantity-input" id="person-adult" name="person-adalt" value="0" min="1" max="8" readonly="readonly">
+										<span class="qty-plus icon-plus"></span>
+									</div>	
+							    </div>
+							    <div class="form-group col-6 col__right">
+							        <label class="label" for="person-kids">Kids</label>
+									<div class="js-quantity">
+									    <span class="qty-minus icon-minus"></span>
+							            <input type="number" class="inputText js-quantity-input" id="person-kids" name="person-kids" value="0" min="0" max="8" readonly="readonly">
+										<span class="qty-plus icon-plus"></span>
+									</div>
+							    </div>
+							</div>
+							<div class="row row-footer">
+							    <div class="col-6 col__left">
+							        <button type="button" class="btn btn__small btn__second btn-reset-persons w-100">Clear</button>
+								</div>
+							    <div class="col-6 col__right">
+							        <button type="button" class="btn btn__small btn-close-dropdown w-100">Apply</button>
+								</div>
+							</div>	
+						</div>
+						<!-- /Dropdown person -->
+				    </div>
+				</div>
+		        <button type="submit" class="btn-booking"><span>Next</span>Book Now</button>
+			</form>
+		</div>	
+	    <!-- /Booking -->
+		<section class="covid" style="background-color: aliceblue; padding-top: 20px;">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3 style="font-weight: 900;">For Your Safety</h3>
+                </div>
+                <div class="col-md-3 col-6 special-item">
+                    <img src="images/room.png" height="80px" alt="Hotel Malad Inn">
+                    <h6 style="padding:20px" class="padding10">Clean &amp; Hygienic Rooms</h6>
+                </div>
+                <div class="col-md-3 col-6 special-item">
+                    <img src="images/sanitization.png" height="80px" alt="Hotel Malad Inn">
+                    <h6 style="padding:20px" class="padding10">Sanitized Rooms &amp; Public Areas</h6>
+                </div>
+                <div class="col-md-3 col-6 special-item">
+                    <img src="images/TemperatureChecks.svg" height="80px" alt="Hotel Malad Inn">
+                    <h6 style="padding:20px" class="padding10">Temperature Checks</h6>
+                </div>
+                <div class="col-md-3 col-6 special-item">
+                    <img src="images/contactLessCheckIn.png" height="80px" alt="Hotel Malad Inn">
+                    <h6 style="padding:20px" class="padding10">Contact Less Check-in</h6>
+                </div>
+            </div>
+        </section>
+	    <!-- Section About Us -->
+	    <section id="about" class="container section">
+	        <div class="row">
+		        <div class="col-12 col-md-12 col-lg-8">
+			        <!-- <span class="title title--overhead js-lines">About Us</span> -->
+			        <h1 class="title title--h1 js-lines main-color">Welcome to Hotel Airport Prime</h1>
+			    </div>
+				<div class="col-12 col-lg-6 text-left text-sm-justify">
+				    <p class="mr-0 mr-lg-4 paragraph js-scroll-show">Experience the feeling of being at home in one of the Best Hotel in Andheri, Hotel airport prime is situated near the Chhatrapati Shivaji Maharaj International Airport near saki naka metro station. It's an ideal place for a stay for couples who have come from out of town and even for the local couples with Ids. It's a budget hotel with all amenities for a comfortable stay. We at Airport prime want to make your stay a memorable and enjoyable one.</p>
+				</div>
+				<div class="col-12 col-lg-6 text-left text-sm-justify">
+					<p class="ml-0 ml-lg-4 paragraph js-scroll-show"> Enjoy a comfortable stay with supreme hospitality and luxurious amenities - blending for a perfect getaway.Every room in Hotel airport prime has been designed with the utmost respect for Nature, combining high-end comfort and old school hospitality. We provide deluxe rooms for all who come for a elevated stay.<br><br><b class="main-color">Enjoy your stay</b></p>
+				</div>
+				
+				<div class="col-12 col-lg-6">
+				    <figure class="about-image-wrap mr-0 mr-lg-4">
+				        <a class="about-link" href="about.html">Explore More <i class="icon-arrow-special"></i></a>
+				        <img class="cover about-image-portrait" src="images/1.jpeg" alt="about" />
+					</figure>	
+				</div>
+				<div class="col-12 col-lg-6">
+				    <figure class="about-image-wrap ml-0 ml-lg-4">
+					    <img class="cover about-image-landscape" src="images/4.jpeg" alt="about" />
+					</figure>
+				</div>
+		    </div>
+		</section>
+		
+		<!-- Section Rooms -->
+		<!-- <section class="container section">	
+	        <div class="row align-items-end">
+		        <div class="col-12 col-md-12 col-lg-8">
+			        <span class="title title--overhead js-lines">Explore Rooms</span>
+			        <h1 class="title title--h1 js-lines">Rooms </h1>
+			    </div>
+				<div class="col-12 col-md-12 col-lg-4 text-lg-right d-none d-md-block">
+				    <a class="btn-link header-btn-more" href="rooms.html">See all Rooms</a>
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-12 col-md-12 col-lg-8">
+				    
+				    <div class="itemRoom">
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="room_details.html">
+							    <img class="cover" src="images/room1.jpeg" alt="room" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Deluxe Room</h4>
+						</div>	
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    
+				    <div class="itemRoom">
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="room_details.html">
+							    <img class="cover" src="assets/images/image_room_02.jpg" alt="room" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Luxe Room</h4>
+							<div class="itemRoom__price">$256<span>night</span></div>
+						</div>
+					</div>	
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    
+				    <div class="itemRoom">
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="room_details.html">
+							    <img class="cover" src="assets/images/image_room_03.jpg" alt="room" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Grand Delux Room</h4>
+							<div class="itemRoom__price">$99<span>night</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    
+				    <div class="itemRoom">
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="room_details.html">
+							    <img class="cover" src="assets/images/image_room_04.jpg" alt="room" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Standard Room</h4>
+							<div class="itemRoom__price">$49<span>night</span></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 col-lg-4">
+				    
+				    <div class="itemRoom mb-0">
+					    <figure class="itemRoom__img-wrap">
+						    <a class="itemRoom__link" href="room_details.html">
+							    <img class="cover" src="assets/images/image_room_05.jpg" alt="room" />
+							</a>
+						</figure>
+						<div class="itemRoom__details">
+						    <h4 class="title title--h4">Apartments</h4>
+							<div class="itemRoom__price">$649<span>night</span></div>
+						</div>
+					</div>
+				</div>
+            </div>			
+	    </section> -->
+		
+		<!-- Section Achievements -->
+		<!-- <section class="container section">	
+	        <div class="row">
+		        <div class="col-12 col-lg-7">
+                    <h2 class="title-description js-lines">We strive to be the best in our field to make you even more comfortable.</h2>
+                </div>
+            </div>
+			
+			<div class="row">
+			    
+			    <div class="col-6 col-md-3 col__left">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Spa offers</span>
+				        <div class="item-count"><span>32</span>+</div>
+					</div>
+				</div>
+				
+			    
+			    <div class="col-6 col-md-3 col__right">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Rooms</span>
+				        <div class="item-count"><span>24</span>+</div>
+					</div>
+				</div>
+				
+			    
+			    <div class="col-6 col-md-3 col__left">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Beaches</span>
+				        <div class="item-count"><span>3</span>+</div>
+					</div>
+				</div>
+				
+			    
+			    <div class="col-6 col-md-3 col__right">
+				    <div class="ach-box">
+				        <span class="title title--overhead js-lines">Happy clients</span>
+				        <div class="item-count"><span>10</span>k</div>
+					</div>
+				</div>
+			</div>
+        </section> -->
+		<section >
+            <div class="container-fluid section-gray " >
+                <div class="row">
+                    <section class="wrapper-full tab-container effectTab-header" id="style_11">
+                        <div class="wrapper tab-item js-scroll-show" >
+                            <div class="custom-row">
+                                <div class="wrapper " align="center">
+                                    <h5 class="ti title title123" style="color:#002d73">HOTEL FEATURES</h5>
+                                </div><br>
+                                <div class="container-fluid ">
+                                    <div class="row text-center">
+                                        <div class="col-6 col-md-2">
+                                            <i class="fas fa-wifi "
+                                                style="font-size:45px; color:#002d73;padding:0px 10px 0px 10px;"></i>
+                                            <p style="padding:0px 20px 0px 20px;"><b>WI-FI</b></p>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <i class="fas fa-snowflake"
+                                                style="font-size:45px; color:#002d73;padding:0px 40px 0px 40px;"></i>
+                                            <p><b>AIR CONDITION</b></p>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <i class="fas fa-shower"
+                                                style="font-size:45px; color:#002d73;padding:0px 20px 0px 20px;"></i>
+                                            <p><b>SHOWER</b></p>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <i class="fas fa-tv"
+                                                style="font-size:45px; color:#002d73;padding:0px 10px 0px 10px;"></i>
+                                            <p><b>TELEVISION</b></p>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <i class="fas fa-newspaper"
+                                                style="font-size:45px; color:#002d73;padding:0px 10px 0px 10px;"></i>
+                                            <p><b>NEWSPAPER</b></p>
+                                        </div>
+                                        <div class="col-6 col-md-2">
+                                            <i class="fas fa-tty"
+                                                style="font-size:45px; color:#002d73;padding:0px 10px 0px 10px;"></i>
+                                            <p><b>TELEPHONE</b></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+		<!-- Section Testimonials -->
+		<!-- <section class="section section-testimonials section-gray section-gray--cutoutTop">
+		    <div class="container">
+			    <div class="row">
+				    <div class="col-12">
+			            <span class="title title--overhead js-lines">Testimonials</span>
+			            <h1 class="title title--h1 js-lines">What clients <br><span class="text-accent">say about us.</span></h1>
+			        </div>
+					
+					<div class="col-12">
+					    
+					    <div class="swiper-container js-testimonials mb-5">
+						    <div class="swiper-wrapper">
+							    
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Best hotel!</h4>
+									<p class="testimonials-item__caption">— The hotel has everything you need. On the ground floor there is a lobby bar, on the second floor there is a zone with an indoor pool and sauna, on the seventh floor there is a restaurant and spa-salon. The rooms are cleaned every day.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/person.jpg" alt="Jacob Lane" /></div>
+										<div>
+										    <div class="author-name">Jacob Lane</div>
+										    <div class="author-country">from USA</div>
+										</div>
+									</div>
+								</div>
+							    
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Comfortable hotel.</h4>
+									<p class="testimonials-item__caption">— Well, what can I say, every year, day and hour, this place is being transformed for the better. The staff is completely competent and friendly, Everything around is blooming, pleasing, nourishing and making the holiday bright.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/person2.jpg" alt="Victoria Wilson" /></div>
+										<div>
+										    <div class="author-name">Victoria Wilson</div>
+										    <div class="author-country">from France</div>
+										</div>
+									</div>
+								</div>
+							    
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">The modern.</h4>
+									<p class="testimonials-item__caption">— The modern 5 * HotelAirport Prime Center is an ideal solution for combining business and leisure. Stylish design and exceptional service will satisfy the desires of any guest. 150 rooms with balcony (non-smoking), sea view, trendy restaurant.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/person3.jpg" alt="Max Edwards" /></div>
+										<div>
+										    <div class="author-name">Max Edwards</div>
+										    <div class="author-country">from Germany</div>
+										</div>
+									</div>
+								</div>
+							    
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Best hotel!</h4>
+									<p class="testimonials-item__caption">— The hotel has everything you need. On the ground floor there is a lobby bar, on the second floor there is a zone with an indoor pool and sauna, on the seventh floor there is a restaurant and spa-salon. The rooms are cleaned every day.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/person.jpg" alt="Jacob Lane" /></div>
+										<div>
+										    <div class="author-name">Jacob Lane</div>
+										    <div class="author-country">from USA</div>
+										</div>
+									</div>
+								</div>
+							    
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">Comfortable hotel.</h4>
+									<p class="testimonials-item__caption">— Well, what can I say, every year, day and hour, this place is being transformed for the better. The staff is completely competent and friendly, Everything around is blooming, pleasing, nourishing and making the holiday bright.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/person2.jpg" alt="Victoria Wilson" /></div>
+										<div>
+										    <div class="author-name">Victoria Wilson</div>
+										    <div class="author-country">from France</div>
+										</div>
+									</div>
+								</div>
+							    
+                                <div class="testimonials-item swiper-slide">
+								    <h4 class="title title--h4">The modern.</h4>
+									<p class="testimonials-item__caption">— The modern 5 * HotelAirport Prime Center is an ideal solution for combining business and leisure. Stylish design and exceptional service will satisfy the desires of any guest. 150 rooms with balcony (non-smoking), sea view, trendy restaurant.</p>
+								    <div class="author-wrap">
+									    <div class="author-picture"><img class="cover" src="assets/images/person3.jpg" alt="Max Edwards" /></div>
+										<div>
+										    <div class="author-name">Max Edwards</div>
+										    <div class="author-country">from Germany</div>
+										</div>
+									</div>
+								</div>
+                            </div>
+							
+                            <div class="swiper-pagination"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+        </section> -->
+		
+	    <!-- Section CTA -->
+	    <section class="container" style="margin-top: 100px;">
+	        <div class="row cta-box cta-negative js-scroll-show">
+			    <div class="col-12 col-lg-7">
+			        <h2 class="title title--h2">Make room for adventure.</h2>
+				    <p class="paragraph">Book your room right now and start your amazing adventure full of discoveries and experiences withAirport Prime.</p>
+				</div>
+				<div class="col-12 col-lg-5 text-lg-right">
+				    <a href="rooms.html" class="btn btn__large btn--white">Reservations <i class="btn-icon-right icon-arrow-special"></i></a>
+				</div>
+			</div>
+	    </section>
+	</main>
+	<!-- /Content -->
+	
+	<!-- Footer -->
+	<footer class="footer">
+	    <div class="footer__left">
+			<ul class="footer__info">
+			    <li>© 2022 Hotel Airport Prime</li>
+			    <li><a href="#">Terms & Conditions</a></li>
+				<!-- text-page.html -->
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+		</div>
+		<ul class="footer__social">
+		    <li><a href="#" class="social-link"><i class="icon-facebook-alt"></i></a></li>
+		    <li><a href="#" class="social-link"><i class="icon-twitter-alt"></i></a></li>
+		    <li><a href="#" class="social-link"><i class="icon-instagram"></i></a></li>
+		</ul>
+	</footer>
+
+    <!-- Lightbox hero video -->
+    <div class="lightbox-backdrop">
+	    <div class="close-popup icon-x"></div>
+        <div class="lightbox-content">
+            <div class="video-foreground">
+			    <div class="youtube-popup" data-yt-url="https://www.youtube.com/embed/HSsqzzuGTPo?autoplay=1&"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Button Live Chat -->
+<!--	<div class="btn-floating js-show-to-scroll"><i class="icon-bubble"></i></div>-->
+
+	<!-- Demo Menu -->
+	<!--<div class="btnSlideNav slideOpen"></div>
+    <div class="btnSlideNav slideClose"></div>-->
+    <!-- <ul class="slideNav">
+	    <li class="slideNav__item rtl-mode"><h4 class="title title--5">More pages</h4> <a href="rtl/index.html">RTL</a></li>
+        <li class="slideNav__item"><a href="index.html">01. Homepage</a></li>
+        <li class="slideNav__item"><a href="home_v2.html">02. Homepage v2</a></li>
+        <li class="slideNav__item"><a href="about.html">03. About Us</a></li>		
+        <li class="slideNav__item"><a href="rooms.html">04. Rooms</a></li>
+		<li class="slideNav__item"><a href="rooms_v2.html">05. Rooms v2</a></li>
+        <li class="slideNav__item"><a href="room_details.html">06. Room Details</a></li>
+		<li class="slideNav__item"><a href="room_details_v2.html">07. Room Details v2</a></li>
+        <li class="slideNav__item"><a href="blog.html">08. Blog</a></li>
+		<li class="slideNav__item"><a href="blog_post.html">09. Post</a></li>
+		<li class="slideNav__item"><a href="gallery.html">10. Gallery</a></li>
+		<li class="slideNav__item"><a href="contact.html">11. Contact</a></li>
+		<li class="slideNav__item"><a href="reservations.html">12. Reservations</a></li>
+		<li class="slideNav__item"><a href="reservations_confirmation.html">13. Reservations Confirmation</a> </li>
+		<li class="slideNav__item"><a href="payment.html">14. Payment</a></li>
+		<li class="slideNav__item"><a href="text-page.html">15. Text page</a></li>
+		<li class="slideNav__item"><a href="404.html">16. 404</a></li>
+    </ul>
+	<div class="overlay-slideNav"></div> -->
+    <!-- Demo Menu -->	
+
+	<!-- JavaScripts -->
+	<script src="assets/js/jquery-3.4.1.min.js"></script>
+	<script src="assets/js/plugins.min.js"></script>
+    <script src="assets/js/common.js"></script>
+    
+	<script src="assets/demo/plugins-demo.js"></script>
+</body>
+</html>
